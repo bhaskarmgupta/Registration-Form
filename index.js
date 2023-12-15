@@ -10,7 +10,7 @@ const port = process.env.PORT || 3000;
 
 // MongoDB connection
 
-mongoose.connect(`mongodb://localhost:27017/registrationDB_form`, {
+mongoose.connect(`mongodb+srv://bhaskarmgupta:Bhanu2002@cluster0.4iaupa4.mongodb.net/registrationDB_form`, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
