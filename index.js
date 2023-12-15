@@ -8,9 +8,11 @@ dotenv.config();
 const app = express();
 const port = process.env.PORT || 3000;
 
+const username=process.env.MONGO_USERNAME;
+const password=process.env.MONGO_PASSWORD;
 // MongoDB connection
 
-mongoose.connect(`mongodb+srv://bhaskarmgupta:Bhanu2002@cluster0.4iaupa4.mongodb.net/registrationDB_form`, {
+mongoose.connect(`mongodb+srv://${username}:${password}@cluster0.4iaupa4.mongodb.net/registrationDB_form`, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
